@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Bree Serif', serif;
+            
+        }
+        header::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("https://source.unsplash.com/collection/190727/1600x900") no-repeat center center/cover;
+            opacity: 0.3;
+            z-index: -1;
+        }
+        .navigation {
+            display: flex;
+            font-size: 20px;
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        section {
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid red;
+            height: 344px;
+
+        }
+        
+
+        h1
+        {
+            font-size: 4rem;
+        }
+        p
+        {
+        text-align: center;
+        width: 600px;
+        }
+        .search{
+            height: 2vw;
+            width: 10vw;
+            margin-left: 600px;
+            margin-top: 28px;
+            background-color: black;
+            color: white;
+        }
+        .search:hover{
+            color: black;
+            background-color: white;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home </li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+                <input class="search" type="text" placeholder="Search">
+            </ul>
+            
+                
+            
+        </nav>
+        <section>
+            <h3> Welcome To My Coding World</h3>
+            <p>This is my coding world.I work on it last 1 month.My target is everyone can learn the coding in my platform.The aim of this page to attract the students in the coding world for better future in the IT Sector.All About This Page.</p>
+        </section>
+    </header>
+    <footer class="footer">Copyright @2023</footer>
+</body>
+
+</html>
